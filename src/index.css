@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base; /* base layer is for default styles */
+@tailwind components; /* is for class-based styles */
+@tailwind utilities; /* single-purpose classes that should always take precedence over any other styles */
 
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -15,8 +15,45 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
+
+	/* Google Core Colors */
+	--blue-color: #4285f4;
+	--red-color: #ea4335;
+	--yellow-color: #fbbc04;
+	--green-color: #34a853;
+}
+
+.blue {
+	color: var(--blue-color);
+}
+
+.red {
+	color: var(--red-color);
+}
+
+.green {
+	color: var(--green-color);
+}
+
+.yellow {
+	color: var(--yellow-color);
+}
+
+@font-face {
+	font-family: "GoogleSans";
+	src: url(/fonts/GoogleSans-Regular-v1.27.ttf) format("truetype");
+}
+
+* {
+	box-sizing: border-box;
 }
 
 html {
 	scroll-behavior: smooth;
+}
+
+@layer base {
+	body {
+		font-family: "GoogleSans", sans-serif;
+	}
 }
