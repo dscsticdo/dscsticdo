@@ -1,12 +1,12 @@
 import "./index.css";
 import Navbar from "./components/Navbar";
-import Company from "./components/Company";
+import AboutUs from "./components/AboutUs";
 
 function App() {
 	return (
 		<>
 			<Navbar />
-			<Company />
+			<AboutUs />
 		</>
 	);
 }

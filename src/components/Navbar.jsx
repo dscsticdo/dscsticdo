@@ -1,5 +1,14 @@
 import { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Banner from "/img/assets/banner.png";
+
+import {
+	FaBars,
+	FaTimes,
+	FaGithub,
+	FaInstagram,
+	FaLinkedinIn,
+	FaFacebook,
+} from "react-icons/fa";
 
 const Navbar = () => {
 	const [toggleNav, setToggleNav] = useState(false);
@@ -8,76 +17,128 @@ const Navbar = () => {
 			name: "Home",
 			link: "/home",
 		},
+
 		{
-			name: "Company",
-			link: "#company",
+			name: "About Us",
+			link: "/company",
 		},
 		{
-			name: "Resources",
+			name: "Membership",
 			link: "/resources",
 		},
 		{
-			name: "About",
+			name: "Events",
 			link: "/about",
 		},
 		{
-			name: "Contact",
+			name: "Teams",
+			link: "/contact",
+		},
+		{
+			name: "Partners",
 			link: "/contact",
 		},
 	];
 
+	const socials = [
+		{
+			name: "GitHub",
+			link: "/",
+			icon: <FaGithub size={30} />,
+		},
+		{
+			name: "Instagram",
+			link: "/",
+			icon: <FaInstagram size={30} />,
+		},
+		{
+			name: "LinkedIn",
+			link: "/",
+			icon: <FaLinkedinIn size={30} />,
+		},
+		{
+			name: "Facebook",
+			link: "/",
+			icon: <FaFacebook size={30} />,
+		},
+	];
+
+	function handleToggleNav() {
+		setToggleNav((prevToggle) => !prevToggle);
+	}
+
 	const mapLinks = links.map((link, index) => {
 		return (
-			<li key={index} className="p-4 cursor-pointer ">
+			<li
+				key={index}
+				className={
+					toggleNav
+						? "py-6 text-2xl"
+						: "cursor-pointer px-4 hover:text-blue-400 hover:font-medium"
+				}
+			>
 				<a href={link.link}>{link.name}</a>
 			</li>
 		);
 	});
 
-	function handleToggleNav() {
-		setToggleNav(!toggleNav);
-	}
-
-	console.log(toggleNav);
+	const mapSocials = socials.map((social, index) => {
+		return (
+			<li
+				key={index}
+				className="w-[160px] h-[60px] flex justify-between items-center px-4 ml-[-100px] hover:ml-[-1px] duration-300"
+			>
+				<a
+					href={social.link}
+					className="flex justify-between items-center w-full text-gray-300"
+				>
+					{social.name} {social.icon}
+				</a>
+			</li>
+		);
+	});
 
 	return (
-		<div className="sticky top">
-			<div
-				className="flex justify-center items-center h-24 max-w-[1240px] mx-auto px-4 text-white"
-				id="/home"
-			>
-				<h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">Navbar</h1>
-				<ul className="hidden md:flex">
-					{mapLinks}
-					{/* <li className="p-4">Home</li>
-				<li className="p-4">Company</li>
-				<li className="p-4">Resources</li>
-				<li className="p-4">About</li>
-				<li className="p-4">Contact</li> */}
-				</ul>
-
-				<div onClick={handleToggleNav} className="block md:hidden">
-					{toggleNav ? (
-						<AiOutlineClose size={20} />
-					) : (
-						<AiOutlineMenu size={20} />
-					)}
+		<>
+			<div className="sticky w-full h-[80px] flex justify-between items-center px-4">
+				<div>
+					<img
+						src="/img/assets/gdscsticdo-transparent.png"
+						alt="test"
+						width={160}
+					/>
 				</div>
 
-				<div
+				{/* menu */}
+				<ul className="hidden md:flex">{mapLinks}</ul>
+
+				{/* hamburger */}
+				<div className="md:hidden z-10" onClick={handleToggleNav}>
+					{toggleNav ? <FaTimes /> : <FaBars />}
+				</div>
+
+				{/* mobile menu */}
+				<ul
 					className={
 						toggleNav
-							? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-600 bg-[#000300] ease-in-out duration-500"
-							: "fixed left-[-100%]"
+							? "absolute top-0 left-0 w-full h-screen bg-[#414141] flex flex-col justify-center items-center"
+							: "hidden"
 					}
 				>
-					<h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
-						Navbar
-					</h1>
-					<ul className="uppercase p-4">{mapLinks}</ul>
-				</div>
+					{mapLinks}
+				</ul>
+
+				{/* social icons */}
+				{/* <div className="hidden lg:flex lg:fixed flex-col top-[35%] left-0">
+					<ul>{mapSocials}</ul>
+				</div> */}
 			</div>
-		</div>
+
+			{/* banner */}
+			<div className="h-full relative">
+				<img src={Banner} alt="banner" className="bg-cover" />
+			</div>
+		</>
 	);
 };
 
