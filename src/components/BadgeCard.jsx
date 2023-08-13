@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
+import React from "react";
 
-import { Collapse, initTE } from "tw-elements";
-initTE({ Collapse });
-
-const MembershipCard = (props) => {
+const BadgeCard = (props) => {
 	let content = "Success! you're officially part now of the GDSC STI CDO";
 	// use toLowercase() to make the search case insensitive
 	if (content.toLowerCase().includes(props.item.content.toLowerCase())) {
@@ -11,7 +9,6 @@ const MembershipCard = (props) => {
 	} else {
 		content = props.item.content;
 	}
-
 	return (
 		<div>
 			<div className="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
@@ -45,11 +42,11 @@ const MembershipCard = (props) => {
 				</h2>
 				<div
 					id={props.item.target}
-					className="!visible border-0"
+					className="!visible"
 					data-te-collapse-item
 					data-te-collapse-show
 					aria-labelledby={props.item.id}
-					data-te-parent="#accordionFlushExample"
+					data-te-parent="#accordion--Badge"
 				>
 					<div className="px-5 py-4">
 						<div className="py-2">
@@ -58,7 +55,7 @@ const MembershipCard = (props) => {
 								href={props.item.link}
 								rel="noreferrer"
 								target="_blank"
-								className="text-blue-600 hover:underline"
+								className="text-blue-600 "
 							>
 								{props.item.linkName}
 							</a>
@@ -77,4 +74,4 @@ const MembershipCard = (props) => {
 	);
 };
 
-export default MembershipCard;
+export default BadgeCard;
