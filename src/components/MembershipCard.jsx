@@ -1,15 +1,13 @@
 /* eslint-disable react/prop-types */
 
-import { Collapse, initTE } from "tw-elements";
-initTE({ Collapse });
-
 const MembershipCard = (props) => {
-	let content = "Success! you're officially part now of the GDSC STI CDO";
 	// use toLowercase() to make the search case insensitive
-	if (content.toLowerCase().includes(props.item.content.toLowerCase())) {
+
+	let content = props.item.content.toLowerCase();
+	const successMessage =
+		"Success! you're officially part now of the GDSC STI CDO";
+	if (content.includes(successMessage.toLocaleLowerCase())) {
 		content = <span className="font-bold">{props.item.content}</span>;
-	} else {
-		content = props.item.content;
 	}
 
 	return (
@@ -49,7 +47,7 @@ const MembershipCard = (props) => {
 					data-te-collapse-item
 					data-te-collapse-show
 					aria-labelledby={props.item.id}
-					data-te-parent="#accordionFlushExample"
+					data-te-parent="#accordion--Membership"
 				>
 					<div className="px-5 py-4">
 						<div className="py-2">

@@ -2,9 +2,11 @@
 import React from "react";
 
 const BadgeCard = (props) => {
-	let content = "Success! you're officially part now of the GDSC STI CDO";
+	let content = props.item.content.toLowerCase();
+	const successMessage =
+		"Success! you earn the Google Developer Student Clubs Member Badge";
 	// use toLowercase() to make the search case insensitive
-	if (content.toLowerCase().includes(props.item.content.toLowerCase())) {
+	if (content.includes(successMessage.toLowerCase())) {
 		content = <span className="font-bold">{props.item.content}</span>;
 	} else {
 		content = props.item.content;
