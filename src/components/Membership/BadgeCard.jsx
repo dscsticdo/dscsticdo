@@ -1,6 +1,4 @@
 /* eslint-disable react/prop-types */
-import React from "react";
-
 const BadgeCard = (props) => {
 	let content = props.item.content.toLowerCase();
 	const successMessage =
