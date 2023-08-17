@@ -1,11 +1,29 @@
 import MissionVisionImage from "/img/assets/mission-vision.png";
 
+const GDSCMotto = [
+	{
+		title: "Connect",
+		color: "blue",
+		text: "Meet students interested in developer technologies at your university. All are welcome, including those with diverse backgrounds and different majors.",
+	},
+	{
+		title: "Learn",
+		color: "red",
+		text: "Learn about a range of technical topics and gain new skills through hands-on workshops, events, talks, and project-building activities - both online and in-person.",
+	},
+	{
+		title: "Grow",
+		color: "green",
+		text: "Apply new learnings to build great solutions for local problems. Advance your skills, career, and network. Give back to your community by helping others learn, too.",
+	},
+];
+
 const AboutUs = () => {
 	return (
 		<>
-			<div name="home">
+			<div name="about-us">
 				{/* Mission & Vision */}
-				<div className="p-12 pb-5 border-b-4 border-blue-600 grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div className="p-12 border-b-4 border-blue-600 grid grid-cols-1 md:grid-cols-2 justify-items-center content-center gap-4">
 					<div className="mission-vision md:place-self-center">
 						<h1 className="text-2xl md:text-4xl py-3">
 							Our Mission and Vision
@@ -20,12 +38,17 @@ const AboutUs = () => {
 						</p>
 					</div>
 					<div className="mission-img">
-						<img src={MissionVisionImage} alt="mission-vision" />
+						<img
+							src={MissionVisionImage}
+							alt="mission-vision"
+							className="hover:object-scale-down"
+							width={620}
+						/>
 					</div>
 				</div>
 
 				{/* GDSC community */}
-				<div className="p-12 pb-5 grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div className="p-12 grid grid-cols-1 md:grid-cols-2 gap-8">
 					<div className="flex-col">
 						<p className="text-2xl whitespace-pre-line break-words text-justify">
 							<small>
@@ -54,29 +77,20 @@ const AboutUs = () => {
 					</div>
 
 					<div className="flex-col text-justify">
-						<h1 className="text-xl blue">Connect</h1>
-						<p className="text-lg">
-							Meet students interested in developer technologies at your
-							university. All are welcome, including those with diverse
-							backgrounds and different majors.
-						</p>
-						<br />
-						<h1 className="text-xl red">Learn</h1>
-						<p className="text-lg">
-							Learn about a range of technical topics and gain new skills
-							through hands-on workshops, events, talks, and project-building
-							activities - both online and in-person.
-						</p>
-						<br />
-						<h1 className="text-xl green">Grow</h1>
-						<p className="text-lg">
-							Apply new learnings to build great solutions for local problems.
-							Advance your skills, career, and network. Give back to your
-							community by helping others learn, too.
-						</p>
+						{GDSCMotto.map((motto) => {
+							return (
+								<div key={motto.title}>
+									<h1 className={`text-xl ${motto.color}`}>{motto.title}</h1>
+									<p className="text-lg">{motto.text}</p>
+									<br />
+								</div>
+							);
+						})}
 					</div>
 				</div>
 			</div>
+
+			<div className="b-example-divider"></div>
 		</>
 	);
 };
