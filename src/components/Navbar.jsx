@@ -100,44 +100,45 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="sticky w-full h-[80px] flex justify-between items-center px-4">
-				<div>
-					<img
-						src="/img/assets/gdscsticdo-transparent.png"
-						alt="test"
-						width={160}
-					/>
-				</div>
+			<header name="home">
+				<div className="sticky w-full h-[80px] flex justify-between items-center px-4">
+					<div>
+						<img
+							src="/img/assets/gdscsticdo-transparent.png"
+							alt="test"
+							width={160}
+						/>
+					</div>
 
-				{/* menu */}
-				<ul className="hidden md:flex">{mapLinks}</ul>
+					{/* menu */}
+					<ul className="hidden md:flex">{mapLinks}</ul>
 
-				{/* hamburger */}
-				<div className="md:hidden z-10" onClick={handleToggleNav}>
-					{toggleNav ? <FaTimes /> : <FaBars />}
-				</div>
+					{/* hamburger */}
+					<div className="md:hidden z-10" onClick={handleToggleNav}>
+						{toggleNav ? <FaTimes /> : <FaBars />}
+					</div>
 
-				{/* mobile menu */}
-				<ul
-					className={
-						toggleNav
-							? "absolute top-0 left-0 w-full h-screen bg-[#414141] flex flex-col justify-center items-center"
-							: "hidden"
-					}
-				>
-					{mapLinks}
-				</ul>
+					{/* mobile menu */}
+					<ul
+						className={
+							toggleNav
+								? "absolute top-0 left-0 w-full h-screen bg-[#414141] flex flex-col justify-center items-center"
+								: "hidden"
+						}
+					>
+						{mapLinks}
+					</ul>
 
-				{/* social icons */}
-				{/* <div className="hidden lg:flex lg:fixed flex-col top-[35%] left-0">
+					{/* social icons */}
+					{/* <div className="hidden lg:flex lg:fixed flex-col top-[35%] left-0">
 					<ul>{mapSocials}</ul>
 				</div> */}
-			</div>
+				</div>
 
-			{/* banner */}
-			<div className="h-full relative">
-				<img src={Banner} alt="banner" className="bg-cover" />
-			</div>
+				{/* banner */}
+
+				<img src={Banner} alt="banner" className="w-full" />
+			</header>
 		</>
 	);
 };
