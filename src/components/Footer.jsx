@@ -143,18 +143,6 @@ const Footer = () => {
 							</div>
 						);
 					})}
-					{/* <div className="second--section">
-						<div className="supporters-link flex flex-col items-center justify-center">
-							<h1 className="text-xl text-center pb-3">Supporters</h1>
-							<a href="https://developers.google.com/" className="pb-1">
-								<p>Google Developers</p>
-							</a>
-							<a href="https://developers.google.com/">
-								<p>Google Developer Student Clubs</p>
-							</a>
-						</div>
-					</div>
-				 */}
 				</div>
 			</div>
 			<div className="credits border-t-4 border-blue-600 py-2">
