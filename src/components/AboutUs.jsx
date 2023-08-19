@@ -75,7 +75,6 @@ const AboutUs = () => {
 							</small>
 						</p>
 					</div>
-
 					<div className="flex-col text-justify">
 						{GDSCMotto.map((motto) => {
 							return (
