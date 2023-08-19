@@ -38,15 +38,16 @@ const Team = () => {
 
 	return (
 		<>
-			<div name="events" className="p-12">
-				<h1 className="text-xl text-center">Meet The Team</h1>
-				<h1 className="text-xl text-left">Key People</h1>
-				<div className="py-5 grid grid-cols-1 lg:grid-cols-4 gap-4">
-					{/* Key people */}
-					{teamCardItems}
+			<div name="team">
+				<div className="p-12">
+					<h1 className="text-xl text-center">Meet The Team</h1>
+					<h1 className="text-xl text-left">Key People</h1>
+					<div className="py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+						{/* Key people */}
+						{teamCardItems}
+					</div>
 				</div>
-
-				<div className="flex flex-col">
+				<div className="flex flex-col border-t-4 border-blue-600 p-12">
 					<div id="accordion-CoreTeam">
 						{/* Accordion - Core Team 2021 */}
 						{CoreTeamDropDownItems}

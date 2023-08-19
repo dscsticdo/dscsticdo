@@ -13,14 +13,15 @@ const Partners = () => {
 	});
 	return (
 		<>
-			<div name="Partners" className="container mx-auto p-12">
-				<h1 className="text-xl text-center pb-6">Partners</h1>
+			<div name="partners" className="container mx-auto p-12">
+				<h1 className="text-xl text-center pb-12">Partners</h1>
 				<div className="flex justify-center items-center">
-					<div className="grid place-items-center content-center grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4">
+					<div className="grid place-items-center place-content-center grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4">
 						{partnerCards}
 					</div>
 				</div>
 			</div>
+			<div className="b-example-divider"></div>
 		</>
 	);
 };

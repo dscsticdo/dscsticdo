@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
 import Membership from "./components/Membership/Membership";
 import Team from "./components/Team/Team";
+import Partners from "./components/Partners";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -11,6 +13,8 @@ function App() {
 			<AboutUs />
 			<Membership />
 			<Team />
+			<Partners />
+			<Footer />
 		</>
 	);
 }
