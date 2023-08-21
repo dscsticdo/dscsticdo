@@ -1,10 +1,10 @@
 import "./index.css";
-import Navbar from "./components/Navbar";
-import AboutUs from "./components/AboutUs";
-import Membership from "./components/Membership/Membership";
-import Team from "./components/Team/Team";
-import Partners from "./components/Partners";
-import Footer from "./components/Footer";
+import Navbar from "./pages/Navbar";
+import AboutUs from "./pages/AboutUs";
+import Membership from "./pages/Membership";
+import Team from "./pages/Team";
+import Partners from "./pages/Partners";
+import Footer from "./pages/Footer";
 
 function App() {
 	return (
