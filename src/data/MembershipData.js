@@ -12,7 +12,7 @@ const MembershipCardData = [
         ariaControls: "collapseOne",
         link: "https://gdsc.community.dev/sti-college-cagayan-de-oro/",
         linkName: "Google Developer Student Clubs STI College Cagayan de Oro",
-        content: "First Login and Signup to ",
+        content: "First Login and Sign up to ",
         img: "gdev-sign.png",
         imgAlt: "sign-up or login"
     },
@@ -66,7 +66,7 @@ const BadgeCardData = [
         ariaControls: "collapseBadgeTwo",
         // linkName: "Google Developers Profile",
         // link: "https://gdsc.community.dev/sti-college-cagayan-de-oro/",
-        content: "Success! you earn the Google Developer Student Clubs Member Badge",
+        content: "Success! you earn the Google Developer Student Clubs Member Badge!",
         img: "badge-redeem.png",
         imgAlt: "redeem badge"
     },

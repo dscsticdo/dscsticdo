@@ -48,6 +48,35 @@
 	color: var(--yellow-color);
 }
 
+/* social links */
+.facebook {
+	color: #3b5998;
+}
+
+.instagram {
+	color: #e4405f;
+}
+
+.discord {
+	color: #7289da;
+}
+
+.twitter {
+	color: #55acee;
+}
+
+.youtube {
+	color: #cd201f;
+}
+
+.linkedin {
+	color: #0077b5;
+}
+
+.email {
+	color: #d44638;
+}
+
 @font-face {
 	font-family: "GoogleSans";
 	src: url(/fonts/GoogleSans-Regular-v1.27.ttf) format("truetype");

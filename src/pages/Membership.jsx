@@ -1,22 +1,25 @@
 /* eslint-disable react/prop-types */
-import MembershipCard from "./MembershipCard";
-import BadgeCard from "./BadgeCard";
-import { MembershipCardData, BadgeCardData } from "../../data/MembershipData";
+import MBAccordion from "../components/membership/MBAccordion";
+import { MembershipCardData, BadgeCardData } from "../data/MembershipData";
 import { Collapse, initTE } from "tw-elements";
-initTE({ Collapse });
+import { useEffect } from "react";
 
 const Membership = () => {
+	useEffect(() => {
+		initTE({ Collapse });
+	}, []);
+	// Membership
 	const MembershipItem = MembershipCardData.map((item) => {
-		return <MembershipCard key={item.id} item={item} />;
+		return <MBAccordion key={item.id} item={item} />;
 	});
-
+	// Badge
 	const BadgeItem = BadgeCardData.map((item) => {
-		return <BadgeCard key={item.id} item={item} />;
+		return <MBAccordion key={item.id} item={item} />;
 	});
 
 	return (
 		<>
-			<div name="Membership" className="p-12">
+			<div name="membership" className="p-24">
 				<h1 className="text-xl text-center">
 					Chapter Membership,{" "}
 					<span className="font-extrabold red"> Grab yours Now!</span>
@@ -28,7 +31,6 @@ const Membership = () => {
 						</h1>
 						<div id="accordion--Membership">{MembershipItem}</div>
 					</div>
-
 					<div className="pt-5">
 						<h1 className="text-lg">
 							Follow these steps to get a free Members Badge

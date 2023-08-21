@@ -1,13 +1,19 @@
 /* eslint-disable react/prop-types */
 
-const MembershipCard = (props) => {
+const MBAccordion = (props) => {
 	// use toLowercase() to make the search case insensitive
 
 	let content = props.item.content.toLowerCase();
 	const successMessage =
 		"Success! you're officially part now of the GDSC STI CDO";
-	if (content.includes(successMessage.toLocaleLowerCase())) {
+	const BadgeMessage =
+		"Success! you earn the Google Developer Student Clubs Member Badge!";
+	if (content.includes(successMessage.toLowerCase())) {
 		content = <span className="font-bold">{props.item.content}</span>;
+	} else if (content.includes(BadgeMessage.toLowerCase())) {
+		content = <span className="font-bold">{props.item.content}</span>;
+	} else {
+		content = props.item.content;
 	}
 
 	return (
@@ -75,4 +81,4 @@ const MembershipCard = (props) => {
 	);
 };
 
-export default MembershipCard;
+export default MBAccordion;
