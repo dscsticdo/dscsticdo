@@ -1,19 +1,20 @@
 /* eslint-disable react/prop-types */
-import MembershipCard from "./MembershipCard";
-import BadgeCard from "./BadgeCard";
-import { MembershipCardData, BadgeCardData } from "../../data/MembershipData";
+import MBAccordion from "../components/membership/MBAccordion";
+import { MembershipCardData, BadgeCardData } from "../data/MembershipData";
 import { Collapse, initTE } from "tw-elements";
 import { useEffect } from "react";
+
 const Membership = () => {
 	useEffect(() => {
 		initTE({ Collapse });
 	}, []);
+	// Membership
 	const MembershipItem = MembershipCardData.map((item) => {
-		return <MembershipCard key={item.id} item={item} />;
+		return <MBAccordion key={item.id} item={item} />;
 	});
-
+	// Badge
 	const BadgeItem = BadgeCardData.map((item) => {
-		return <BadgeCard key={item.id} item={item} />;
+		return <MBAccordion key={item.id} item={item} />;
 	});
 
 	return (

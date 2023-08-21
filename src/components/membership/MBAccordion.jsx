@@ -1,14 +1,21 @@
 /* eslint-disable react/prop-types */
-const BadgeCard = (props) => {
+
+const MBAccordion = (props) => {
+	// use toLowercase() to make the search case insensitive
+
 	let content = props.item.content.toLowerCase();
 	const successMessage =
-		"Success! you earn the Google Developer Student Clubs Member Badge";
-	// use toLowercase() to make the search case insensitive
+		"Success! you're officially part now of the GDSC STI CDO";
+	const BadgeMessage =
+		"Success! you earn the Google Developer Student Clubs Member Badge!";
 	if (content.includes(successMessage.toLowerCase())) {
+		content = <span className="font-bold">{props.item.content}</span>;
+	} else if (content.includes(BadgeMessage.toLowerCase())) {
 		content = <span className="font-bold">{props.item.content}</span>;
 	} else {
 		content = props.item.content;
 	}
+
 	return (
 		<div>
 			<div className="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
@@ -42,11 +49,11 @@ const BadgeCard = (props) => {
 				</h2>
 				<div
 					id={props.item.target}
-					className="!visible"
+					className="!visible border-0"
 					data-te-collapse-item
 					data-te-collapse-show
 					aria-labelledby={props.item.id}
-					data-te-parent="#accordion--Badge"
+					data-te-parent="#accordion--Membership"
 				>
 					<div className="px-5 py-4">
 						<div className="py-2">
@@ -55,7 +62,7 @@ const BadgeCard = (props) => {
 								href={props.item.link}
 								rel="noreferrer"
 								target="_blank"
-								className="text-blue-600 "
+								className="text-blue-600 hover:underline"
 							>
 								{props.item.linkName}
 							</a>
@@ -74,4 +81,4 @@ const BadgeCard = (props) => {
 	);
 };
 
-export default BadgeCard;
+export default MBAccordion;

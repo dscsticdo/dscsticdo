@@ -9,8 +9,6 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
-	// const isMobile = window.innerHeight >= 768;
-	// console.log(isMobile);
 	const links = [
 		{
 			icon: <FaFacebook size={24} />,
@@ -84,7 +82,7 @@ const Footer = () => {
 	return (
 		<>
 			<div className="container mx-auto" name="contact">
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 place-content-center h-screen">
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 place-content-center py-32 md:py-40">
 					<div className="first--section">
 						{/* <h1 className="text-xl text-center pb-6">Links</h1> */}
 						<div className="links--image flex flex-col items-center justify-center">
@@ -121,12 +119,12 @@ const Footer = () => {
 						return (
 							<div
 								key={index}
-								className={`${link.sectionName} flex flex-col items-center`}
+								className={`${link.sectionName} flex flex-col items-center gap-2`}
 							>
 								<h1 className="text-xl text-center pb-3">{link.heading}</h1>
 								<a
 									href={link.linkOne}
-									className="pb-1 text-center text-gray-500 hover:text-blue-600"
+									className="text-center text-gray-500 hover:text-blue-600"
 									target="_blank"
 									rel="noreferrer"
 								>
