@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import React from "react";
 import { Collapse, initTE } from "tw-elements";
 initTE({ Collapse });
 
