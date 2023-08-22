@@ -1,7 +1,7 @@
 import { keyPeople, coreTeam } from "../data/TeamCardData";
-import { CoreTeamDropDownData } from "../data/CoreTeamDropDownData";
+import { CoreTeamAccordionData } from "../data/CoreTeamAccordionData";
 import TeamCard from "../components/team/TeamCard";
-import CoreTeamDropDown from "../components/team/CoreTeamDropDown";
+import CoreTeamAccordion from "../components/Team/CoreTeamAccordion";
 
 import { Collapse, initTE } from "tw-elements";
 initTE({ Collapse });
@@ -20,14 +20,14 @@ const Team = () => {
 		return <TeamCard key={item.id} card={item} />;
 	});
 	// core-team dropdown
-	const CoreTeamDropDownItems = CoreTeamDropDownData.map((item) => {
+	const CoreTeamDropDownItems = CoreTeamAccordionData.map((item) => {
 		let cards;
 		if (item.id === 1) {
 			cards = CoreTeam2021Items;
 		} else if (item.id === 2) {
 			cards = CoreTeam2020Items;
 		}
-		return <CoreTeamDropDown key={item.id} dropdown={item} cards={cards} />;
+		return <CoreTeamAccordion key={item.id} dropdown={item} cards={cards} />;
 	});
 
 	return (

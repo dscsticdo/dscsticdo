@@ -1,4 +1,4 @@
-export const CoreTeamDropDownData = [
+export const CoreTeamAccordionData = [
     {
         id: 1,
         accordionId: "flush-coreTeam2021",
