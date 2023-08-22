@@ -1,7 +1,7 @@
 import { keyPeople, coreTeam } from "../data/TeamCardData";
 import { CoreTeamAccordionData } from "../data/CoreTeamAccordionData";
 import TeamCard from "../components/team/TeamCard";
-import CoreTeamAccordion from "../components/Team/CoreTeamAccordion";
+import CoreTeamAccordion from "../components/team/CoreTeamAccordion";
 
 import { Collapse, initTE } from "tw-elements";
 initTE({ Collapse });
