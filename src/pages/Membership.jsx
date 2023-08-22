@@ -19,8 +19,8 @@ const Membership = () => {
 
 	return (
 		<>
-			<div name="membership" className="p-24">
-				<h1 className="text-xl text-center">
+			<div name="membership" className="container mx-auto p-12 pb-24">
+				<h1 className="text-xl text-center mb-5" data-aos="slide-up">
 					Chapter Membership,{" "}
 					<span className="font-extrabold red"> Grab yours Now!</span>
 				</h1>
@@ -31,7 +31,7 @@ const Membership = () => {
 						</h1>
 						<div id="accordion--Membership">{MembershipItem}</div>
 					</div>
-					<div className="pt-5">
+					<div className="pt-10">
 						<h1 className="text-lg">
 							Follow these steps to get a free Members Badge
 						</h1>

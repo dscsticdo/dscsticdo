@@ -23,9 +23,9 @@ const AboutUs = () => {
 		<>
 			<div name="about-us">
 				{/* Mission & Vision */}
-				<div className="p-12 border-b-4 border-blue-600 grid grid-cols-1 md:grid-cols-2 justify-items-center content-center gap-4">
-					<div className="mission-vision md:place-self-center">
-						<h1 className="text-xl md:text-4xl py-3">Our Mission and Vision</h1>
+				<div className="container py-12 mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center gap-2 lg:gap-6">
+					<div className="mission-vision" data-aos="fade-up-right">
+						<h1 className="text-xl md:text-3xl py-3">Our Mission and Vision</h1>
 						<p className="text-xl md:text-xl">
 							We present to you our mission statement and vision statement.
 							These statements define the purpose and the goals of our club.
@@ -35,48 +35,43 @@ const AboutUs = () => {
 							materialize our aspirations.
 						</p>
 					</div>
-					<div className="mission-img">
-						<img
-							src={MissionVisionImage}
-							alt="mission-vision"
-							className="hover:object-scale-down"
-							width={620}
-						/>
+					<div className="mission-vision" data-aos="fade-up-left">
+						<figure>
+							<img src={MissionVisionImage} alt="mission-vision" width={620} />
+						</figure>
 					</div>
 				</div>
-
+				<div className="border-b-4 border-blue-600"></div>
 				{/* GDSC community */}
-				<div className="p-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-					<div className="flex-col">
-						<p className="text-2xl whitespace-pre-line break-words text-justify">
-							<small>
-								Google Developer Student Clubs are community groups for college
-								and university students interested in Google developer
-								technologies.
-								<br />
-								<br />
-								Students from all undergraduate or graduate programs with an
-								interest in growing as a developer are welcome. By joining a
-								GDSC, students grow their knowledge in a peer-to-peer learning
-								environment and build solutions for local businesses and their
-								community.
-								<br />
-								<br />
-								<span className="blue">Google Developer Student Clubs</span> is
-								a program supported by <span className="blue">G</span>
-								<span className="red">o</span>
-								<span className="yellow">o</span>
-								<span className="blue">g</span>
-								<span className="blue">l</span>
-								<span className="red">e</span>{" "}
-								<span className="text-gray-400">Developers</span>.
-							</small>
-						</p>
+				<div className="p-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
+					<div className="text-lg text-justify grid grid-rows-1 lg:grid-rows-3">
+						<div data-aos="fade-right">
+							Google Developer Student Clubs are community groups for college
+							and university students interested in Google developer
+							technologies.
+						</div>
+						<div data-aos="fade-right">
+							Students from all undergraduate or graduate programs with an
+							interest in growing as a developer are welcome. By joining a GDSC,
+							students grow their knowledge in a peer-to-peer learning
+							environment and build solutions for local businesses and their
+							community.
+						</div>
+						<div data-aos="fade-right">
+							<span className="blue">Google Developer Student Clubs</span> is a
+							program supported by <span className="blue">G</span>
+							<span className="red">o</span>
+							<span className="yellow">o</span>
+							<span className="blue">g</span>
+							<span className="blue">l</span>
+							<span className="red">e</span>{" "}
+							<span className="text-gray-400">Developers</span>.
+						</div>
 					</div>
-					<div className="flex-col text-justify">
+					<div className="text-justify grid grid-rows-1 lg:grid-rows-3">
 						{GDSCMotto.map((motto) => {
 							return (
-								<div key={motto.title}>
+								<div key={motto.title} data-aos="fade-left">
 									<h1 className={`text-xl ${motto.color}`}>{motto.title}</h1>
 									<p className="text-lg">{motto.text}</p>
 									<br />
@@ -86,7 +81,6 @@ const AboutUs = () => {
 					</div>
 				</div>
 			</div>
-
 			<div className="b-example-divider"></div>
 		</>
 	);
