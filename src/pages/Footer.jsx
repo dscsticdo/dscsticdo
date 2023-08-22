@@ -82,7 +82,10 @@ const Footer = () => {
 	return (
 		<>
 			<div className="container mx-auto" name="contact">
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 place-content-center py-32 md:py-40">
+				<div
+					className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 place-content-center py-32 md:py-40"
+					data-aos="slide-up"
+				>
 					<div className="first--section">
 						{/* <h1 className="text-xl text-center pb-6">Links</h1> */}
 						<div className="links--image flex flex-col items-center justify-center">
@@ -143,7 +146,7 @@ const Footer = () => {
 					})}
 				</div>
 			</div>
-			<div className="credits border-t-4 border-blue-600 py-2">
+			<div className="border-t-4 border-blue-600 py-2">
 				<p className="text-center text-sm">
 					&copy; 2023 GDSC STI CDO. All Rights Reserved.
 				</p>
