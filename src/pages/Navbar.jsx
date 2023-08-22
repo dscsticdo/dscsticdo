@@ -91,43 +91,42 @@ const Navbar = () => {
 		return (
 			<li
 				key={index}
-				className="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1 xs:pl-0 xs:pr-0 xs:border-b-2 xs:hover:border-blue-600 lg:border-b-0"
+				className="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1 xs:pl-0 xs:pr-0 xs:border-b-2 xs:hover:border-blue-600 lg:border-b-0 hover:cursor-pointer"
 				data-te-nav-item-ref
 			>
-				<Link to={link.link} smooth={true} duration={800}>
-					<a
-						onClick={handleToggleNav}
-						href={link.link}
-						className={
-							toggleNav
-								? "active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-								: "p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-						}
-						// aria-current="page"
-						data-te-nav-link-ref
-					>
-						{link.name}
-					</a>
+				<Link
+					onClick={handleToggleNav}
+					to={link.link}
+					smooth={true}
+					duration={800}
+					key={index}
+					className={
+						toggleNav
+							? "active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+							: "p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+					}
+				>
+					{link.name}
 				</Link>
 			</li>
 		);
 	});
 
-	const mapSocials = socials.map((social, index) => {
-		return (
-			<li
-				key={index}
-				className="w-[160px] h-[60px] flex justify-between items-center px-4 ml-[-100px] hover:ml-[-1px] duration-300"
-			>
-				<a
-					href={social.link}
-					className="flex justify-between items-center w-full text-gray-300"
-				>
-					{social.name} {social.icon}
-				</a>
-			</li>
-		);
-	});
+	// const mapSocials = socials.map((social, index) => {
+	// 	return (
+	// 		<li
+	// 			key={index}
+	// 			className="w-[160px] h-[60px] flex justify-between items-center px-4 ml-[-100px] hover:ml-[-1px] duration-300"
+	// 		>
+	// 			<a
+	// 				href={social.link}
+	// 				className="flex justify-between items-center w-full text-gray-300"
+	// 			>
+	// 				{social.name} {social.icon}
+	// 			</a>
+	// 		</li>
+	// 	);
+	// });
 
 	return (
 		<>
