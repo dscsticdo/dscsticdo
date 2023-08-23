@@ -20,7 +20,7 @@ const Navbar = () => {
 		// console.log(position);
 	};
 	const scrollToTop = () => {
-		scroll.scrollToTop({ delay: 300, smooth: true });
+		scroll.scrollToTop({ delay: 150, smooth: true });
 	};
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
