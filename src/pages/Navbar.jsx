@@ -91,7 +91,7 @@ const Navbar = () => {
 		return (
 			<li
 				key={index}
-				className="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1 xs:pl-0 xs:pr-0 xs:border-b-2 xs:hover:border-blue-600 lg:border-b-0 hover:cursor-pointer"
+				className="my-4 pl-2 lg:my-0 lg:pl-4 lg:pr-1 xs:px-0 xs:border-b-2 xs:hover:border-blue-600 lg:border-b-0 hover:cursor-pointer"
 				data-te-nav-item-ref
 			>
 				<Link
