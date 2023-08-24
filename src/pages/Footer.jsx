@@ -83,7 +83,7 @@ const Footer = () => {
 		<>
 			<div className="container mx-auto" name="contact">
 				<div
-					className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 place-content-center py-32 md:py-40"
+					className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 place-content-center py-20 md:py-40"
 					data-aos="slide-up"
 				>
 					<div className="first--section">
