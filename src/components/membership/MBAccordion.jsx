@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
+import { Gallery, Item } from "react-photoswipe-gallery";
+import "photoswipe/dist/photoswipe.css";
 
 const MBAccordion = (props) => {
 	// use toLowercase() to make the search case insensitive
-
 	let content = props.item.content.toLowerCase();
 	const successMessage =
 		"Success! you're officially part now of the GDSC STI CDO";
@@ -15,6 +16,14 @@ const MBAccordion = (props) => {
 	} else {
 		content = props.item.content;
 	}
+
+	// const galleryItems = [
+	// 	{
+	// 		src: `img/steps/${item.img}`,
+	// 		thumbnail: `img/steps/${item.img}`,
+	// 		title: item.img,
+	// 	},
+	// ];
 
 	return (
 		<>
@@ -53,7 +62,7 @@ const MBAccordion = (props) => {
 					className="!visible hidden border-0"
 					data-te-collapse-item
 					aria-labelledby={props.item.id}
-					data-te-parent="#accordion--Membership"
+					data-te-parent={`#${props.item.accordionParent}`}
 				>
 					<div className="px-5 py-4">
 						<div className="py-2">
@@ -67,12 +76,25 @@ const MBAccordion = (props) => {
 								{props.item.linkName}
 							</a>
 						</div>
-						<figure className="flex justify-center items-center py-2">
-							<img
-								src={`img/steps/${props.item.img}`}
-								alt={props.item.imgAlt}
-								className="w-2/4"
-							/>
+						<figure className="flex justify-center items-center py-2 membership-accordion">
+							<Gallery>
+								<Item
+									original={`img/steps/${props.item.img}`}
+									thumbnail={`img/steps/${props.item.img}`}
+									width={props.item.imgWidth}
+									height={props.item.imgHeight}
+									alt={props.item.imgAlt}
+								>
+									{({ ref, open }) => (
+										<img
+											ref={ref}
+											onClick={open}
+											src={`img/steps/${props.item.img}`}
+											className="w-2/4 cursor-pointer scale-100 hover:scale-105 transition ease-in-out duration-200 "
+										/>
+									)}
+								</Item>
+							</Gallery>
 						</figure>
 					</div>
 				</div>
