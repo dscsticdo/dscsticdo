@@ -6,7 +6,7 @@
 const MembershipCardData = [
     {
         id: "headingOne",
-        // accordionID: "accordionExample",
+        accordionParent: "accordion--Membership",
         title: "Step #1",
         target: "collapseOne",
         ariaControls: "collapseOne",
@@ -14,12 +14,14 @@ const MembershipCardData = [
         linkName: "Google Developer Student Clubs STI College Cagayan de Oro",
         content: "First Login and Sign up to ",
         img: "gdev-sign.png",
+        imgWidth: 1200,
+        imgHeight: 600,
         imgAlt: "sign-up or login"
     },
 
     {
         id: "headingTwo",
-        // accordionID: "accordionExample",
+        accordionParent: "accordion--Membership",
         title: "Step #2",
         target: "collapseTwo",
         ariaControls: "collapseTwo",
@@ -27,12 +29,14 @@ const MembershipCardData = [
         link: "https://gdsc.community.dev/sti-college-cagayan-de-oro/",
         content: "You will be redirect again to STI CDO Chapter and just click ",
         img: "sti-dsc.png",
+        imgWidth: 1200,
+        imgHeight: 600,
         imgAlt: "sti dsc"
     },
 
     {
         id: "headingThree",
-        // accordionID: "accordionExample",
+        accordionParent: "accordion--Membership",
         title: "Step #3",
         target: "collapseThree",
         ariaControls: "collapseThree",
@@ -40,6 +44,8 @@ const MembershipCardData = [
         link: "https://gdsc.community.dev/sti-college-cagayan-de-oro/",
         content: "Success! you're officially part now of the GDSC STI CDO",
         img: "sti-success.png",
+        imgWidth: 1200,
+        imgHeight: 600,
         imgAlt: "sti success"
     },
 ]
@@ -47,20 +53,22 @@ const MembershipCardData = [
 const BadgeCardData = [
     {
         id: "headingBadgeOne",
-        // accordionID: "accordionExample",
+        accordionParent: "accordion--Badge",
         title: "Step #1",
         target: "collapseBadgeOne",
         ariaControls: "collapseBadgeOne",
         linkName: "Google Developers Profile",
-        link: "https://gdsc.community.dev/sti-college-cagayan-de-oro/",
+        link: "https://bit.ly/members-badge.",
         content: "To Redeem the membership badge click create profile by visiting ",
         img: "create-profile.png",
+        imgWidth: 1200,
+        imgHeight: 400,
         imgAlt: "gdsc create profile"
     },
 
     {
         id: "headingBadgeTwo",
-        // accordionID: "accordionExample",
+        accordionParent: "accordion--Badge",
         title: "Step #2",
         target: "collapseBadgeTwo",
         ariaControls: "collapseBadgeTwo",
@@ -68,12 +76,14 @@ const BadgeCardData = [
         // link: "https://gdsc.community.dev/sti-college-cagayan-de-oro/",
         content: "Success! you earn the Google Developer Student Clubs Member Badge!",
         img: "badge-redeem.png",
+        imgWidth: 1200,
+        imgHeight: 600,
         imgAlt: "redeem badge"
     },
 
     {
         id: "headingBadgeThree",
-        // accordionID: "accordionExample",
+        accordionParent: "accordion--Badge",
         title: "Step #3",
         target: "collapseBadgeThree",
         ariaControls: "collapseBadgeThree",
@@ -81,6 +91,8 @@ const BadgeCardData = [
         link: "https://developers.google.com/profile/",
         content: "To view your Google Developer Student Club Member's Badge, go to ",
         img: "gdev-profile.png",
+        imgWidth: 1100,
+        imgHeight: 500,
         imgAlt: "gdsc badge"
     }
 ]
