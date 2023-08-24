@@ -23,9 +23,11 @@ const AboutUs = () => {
 		<>
 			<div name="about-us">
 				{/* Mission & Vision */}
-				<div className="container py-12 mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center gap-2 lg:gap-6">
+				<div className="container mx-auto py-12 grid grid-cols-1 md:grid-cols-2 place-items-center gap-2 lg:gap-6">
 					<div className="mission-vision" data-aos="fade-up-right">
-						<h1 className="text-xl md:text-3xl py-3">Our Mission and Vision</h1>
+						<h1 className="text-2xl md:text-3xl py-3">
+							Our Mission and Vision
+						</h1>
 						<p className="text-xl md:text-xl">
 							We present to you our mission statement and vision statement.
 							These statements define the purpose and the goals of our club.
