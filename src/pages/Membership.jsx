@@ -9,17 +9,17 @@ const Membership = () => {
 		initTE({ Collapse });
 	}, []);
 	// Membership
-	const MembershipItem = MembershipCardData.map((item) => {
-		return <MBAccordion key={item.id} item={item} />;
+	const MembershipItem = MembershipCardData.map((object) => {
+		return <MBAccordion key={object.id} item={object} />;
 	});
 	// Badge
-	const BadgeItem = BadgeCardData.map((item) => {
-		return <MBAccordion key={item.id} item={item} />;
+	const BadgeItem = BadgeCardData.map((object) => {
+		return <MBAccordion key={object.id} item={object} />;
 	});
 
 	return (
 		<>
-			<div name="membership" className="container mx-auto p-12 pb-24">
+			<div name="membership" className="md:container md:mx-auto p-12 pb-24">
 				<h1 className="text-xl text-center mb-5" data-aos="slide-up">
 					Chapter Membership,{" "}
 					<span className="font-extrabold red"> Grab yours Now!</span>
