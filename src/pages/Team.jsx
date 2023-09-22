@@ -8,24 +8,24 @@ initTE({ Collapse });
 
 const Team = () => {
 	// key people
-	const teamCardItems = keyPeople.map((item) => {
-		return <TeamCard key={item.id} card={item} />;
+	const teamCardItems = keyPeople.map((item, index) => {
+		return <TeamCard key={index} card={item} />;
 	});
 	// core-team 2021
-	const CoreTeam2021Items = coreTeam.coreTeam2021.map((item) => {
-		return <TeamCard key={item.id} card={item} />;
+	const CoreTeam2021Items = coreTeam.coreTeam2021.map((item, index) => {
+		return <TeamCard key={index} card={item} />;
 	});
 	// core-team 2020
-	const CoreTeam2020Items = coreTeam.coreTeam2020.map((item) => {
-		return <TeamCard key={item.id} card={item} />;
+	const CoreTeam2020Items = coreTeam.coreTeam2020.map((item, index) => {
+		return <TeamCard key={index} card={item} />;
 	});
 	// core-team dropdown
 	const CoreTeamDropDownItems = CoreTeamAccordionData.map((item) => {
 		let cards;
 		if (item.id === 1) {
-			cards = CoreTeam2021Items;
-		} else if (item.id === 2) {
 			cards = CoreTeam2020Items;
+		} else if (item.id === 2) {
+			cards = CoreTeam2021Items;
 		}
 		return <CoreTeamAccordion key={item.id} dropdown={item} cards={cards} />;
 	});
