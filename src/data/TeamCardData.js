@@ -1,7 +1,15 @@
 const keyPeople = [
     {
-        name: "Angelie Buen",
-        position: "Former DSC Adviser A.Y 2019 - 22",
+        name: "Angel A. Tan",
+        position: "DSC Adviser AY 2022",
+        image: "core-team-2021/Adviser.png",
+        profileLink: "fb.com",
+        details: "",
+        birthday: "September 3",
+    },
+    {
+        name: "Angelie D. Buen",
+        position: "Former DSC Adviser AY 2019 - 22",
         image: "core-team-2021/Adviser.png",
         profileLink: "fb.com",
         details: "",
@@ -9,7 +17,7 @@ const keyPeople = [
     },
     {
         name: "James Inding",
-        position: "Mentor & Lead A.Y 2022 - 23",
+        position: "Mentor & Lead AY 2022 - 23",
         image: "core-team-2022/lead.jpg",
         profileLink: "fb.com",
         details: "",
@@ -17,7 +25,7 @@ const keyPeople = [
     },
     {
         name: "Christian Paul H. Flores",
-        position: "Former Mentor & Lead A.Y 2021 - 22",
+        position: "Former Mentor & Lead AY 2021 - 22",
         image: "core-team-2021/Flores.png",
         profileLink: "fb.com",
         details: "Hello! I am Christian, but you can call me Chan or Paul, and I'm passionate about Web Development and Mobile Applications. Because of this passion and interest, I created the GDSC STI CDO official website. My new routine includes reading books, working out, and playing and singing along with my guitar.",
