@@ -1,44 +1,39 @@
 const keyPeople = [
     {
-        id: 1,
         name: "Angelie Buen",
-        position: "DSC Adviser A.Y 2019 - 2022",
+        position: "Former DSC Adviser A.Y 2019 - 22",
         image: "core-team-2021/Adviser.png",
         profileLink: "fb.com",
         details: "",
         birthday: "September 3",
     },
     {
-        id: 2,
         name: "James Inding",
-        position: "Mentor & Lead A.Y 2022 - 2023",
+        position: "Mentor & Lead A.Y 2022 - 23",
         image: "core-team-2022/lead.jpg",
         profileLink: "fb.com",
         details: "",
         birthday: "July 24"
     },
     {
-        id: 3,
         name: "Christian Paul H. Flores",
-        position: "Mentor & Lead A.Y 2021 - 2022",
+        position: "Former Mentor & Lead A.Y 2021 - 22",
         image: "core-team-2021/Flores.png",
         profileLink: "fb.com",
         details: "Hello! I am Christian, but you can call me Chan or Paul, and I'm passionate about Web Development and Mobile Applications. Because of this passion and interest, I created the GDSC STI CDO official website. My new routine includes reading books, working out, and playing and singing along with my guitar.",
         birthday: "December 23"
     },
     {
-        id: 5,
         name: "Jenny Cabigquez",
-        position: "Mentor & Lead AY 20 - 21 ",
+        position: "Former Mentor & Lead AY 2020 - 21 ",
         image: "core-team-2020/Cabigquez.png",
         profileLink: "fb.com",
         details: "Hi there folks! I'm Jenaii, hope you're doing well. Remember this, always feed your mind with positive thoughts because thinking negative thoughts would impact your life. Our happiness occurs when our mind has a high quality of thoughts. Keep safe everyone and God bless!",
         birthday: "September 18"
     },
     {
-        id: 4,
         name: "John Carlos Montejo",
-        position: "Mentor & Lead/Founder AY 19 - 20",
+        position: "Mentor & Lead/Founder AY 2019 - 20",
         image: "core-team-2020/Montejo.png",
         profileLink: "fb.com",
         details: "Hello World! I’m John Carlos Montejo, but just call me JC for short. I love playing video games, reading manga, and listening to music during my free time.",
@@ -49,7 +44,6 @@ const keyPeople = [
 
 const coreTeam2021 = [
     {
-        id: 1,
         name: "Phillip Jhon Lumod",
         position: "Design Lead",
         image: "core-team-2021/Lumod.png",
@@ -58,7 +52,6 @@ const coreTeam2021 = [
         birthday: "June 11",
     },
     {
-        id: 2,
         name: "Jeeza Lane Salise",
         position: "Lead Writer",
         image: "core-team-2021/Salise.png",
@@ -67,7 +60,6 @@ const coreTeam2021 = [
         birthday: "December 4"
     },
     {
-        id: 3,
         name: "Jason Llanes",
         position: "Event Lead",
         image: "core-team-2021/Llanes.png",
@@ -77,7 +69,6 @@ const coreTeam2021 = [
     },
 
     {
-        id: 5,
         name: "Crisem Kyth Barbado",
         position: "Events Coordinator",
         image: "core-team-2021/Barbado.png",
@@ -87,7 +78,6 @@ const coreTeam2021 = [
     },
 
     {
-        id: 4,
         name: "Jaycon Jude Madrid",
         position: "Events Coordinator",
         image: "core-team-2021/Madrid.png",
@@ -97,7 +87,6 @@ const coreTeam2021 = [
     },
 
     {
-        id: 6,
         name: "Charisse Duarte",
         position: "Social Media Manager",
         image: "core-team-2021/Duarte.png",
@@ -107,7 +96,6 @@ const coreTeam2021 = [
     },
 
     {
-        id: 7,
         name: "Kharylle Dalapo",
         position: "Lead Secretariat",
         image: "core-team-2021/Dalapo.png",
@@ -117,7 +105,6 @@ const coreTeam2021 = [
     },
 
     {
-        id: 8,
         name: "Jovel Kenth Emnacin",
         position: "Lead Secretariat",
         image: "core-team-2021/Emnacin.png",
@@ -130,7 +117,7 @@ const coreTeam2021 = [
 
 const coreTeam2020 = [
     {
-        id: 1,
+
         name: "Jhamaya",
         position: "Creative Lead",
         image: "core-team-2020/Santiago.jpeg",
@@ -139,7 +126,7 @@ const coreTeam2020 = [
         birthday: "January 27",
     },
     {
-        id: 2,
+
         name: "Clark",
         position: "Lead Writer",
         image: "core-team-2020/Cabeltes.png",
@@ -148,7 +135,7 @@ const coreTeam2020 = [
         birthday: "December 24"
     },
     {
-        id: 3,
+
         name: "Jason",
         position: "Event Coordinator",
         image: "core-team-2020/Los-Baños.png",
@@ -157,7 +144,7 @@ const coreTeam2020 = [
         birthday: "February 8"
     },
     {
-        id: 4,
+
         name: "Mike",
         position: "Events Coordinator",
         image: "core-team-2020/Magcalipay.png",
@@ -166,7 +153,7 @@ const coreTeam2020 = [
         birthday: "August 21"
     },
     {
-        id: 5,
+
         name: "Rey",
         position: "Events Coordinator",
         image: "core-team-2020/Sales.png",
@@ -176,7 +163,7 @@ const coreTeam2020 = [
     },
 
     {
-        id: 6,
+
         name: "Cyrill",
         position: "Events Coordinator",
         image: "core-team-2020/Sobremonte.png",
@@ -186,7 +173,7 @@ const coreTeam2020 = [
     },
 
     {
-        id: 7,
+
         name: "Mylene",
         position: "Social Media Manager",
         image: "core-team-2020/Mondano.png",
