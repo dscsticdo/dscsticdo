@@ -1,7 +1,7 @@
 const keyPeople = [
-    {
+      {
         name: "Angel A. Tan",
-        position: "DSC Adviser AY 2022",
+        position: "DSC Adviser AY 2023 - 24",
         image: "core-team-2021/Adviser.png",
         profileLink: "fb.com",
         details: "",
@@ -14,6 +14,14 @@ const keyPeople = [
         profileLink: "fb.com",
         details: "",
         birthday: "September 3",
+    },
+    {
+        name: "Josh Ryan B. Sulatan",
+        position: "Lead AY 2023 - 24",
+        image: "",
+        profileLink: "https://www.facebook.com/iamfivetwo",
+        details: "Yo! I am Josh, I like Android Development and Game Development, and I'm pursuing to great in these fields!",
+        birthday: "February 9"
     },
     {
         name: "James Inding",
@@ -50,146 +58,236 @@ const keyPeople = [
 ]
 
 const coreTeam2023 = [
-   {
-        name: "Josh Ryan",
-        position: "Design Lead",
-        image: "core-team-2021/Lumod.png",
-        profileLink: "fb.com",
-        details: "Howdy Stiers My Name is Phillip Jhon Lumod, I love to read mangas and listen to music. ",
-        birthday: "June 11",
+      {
+        name: "John Andrew L. Castillano",
+        position: "Chief Operating Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/stoiccsaad?mibextid=ZbWKwL",
+        details: '""',
+        birthday: "July 31",
     },
     {
-        name: "Jeeza Lane Salise",
-        position: "Lead Writer",
-        image: "core-team-2021/Salise.png",
-        profileLink: "fb.com",
-        details: "Hello everyone, my name is Jeeza Lane Salise. My classmates call me Wasd and I'm interested in technology. I love to play video games, watch animated tv shows, read webcomics, and listen to music.",
-        birthday: "December 4"
+        name: "Jeric A. Lumbay",
+        position: "Chief Technology Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/prox.lumbay.7",
+        details: '""',
+        birthday: "July 22"
     },
     {
-        name: "Jason Llanes",
-        position: "Event Lead",
-        image: "core-team-2021/Llanes.png",
-        profileLink: "fb.com",
-        details: "Oh! Hi there, It’s me Jason S. Llanes. By the way I’m the type of person who is fun to go with and also I love doing things in regards to programming and also gaming. ;)",
-        birthday: "March 13"
-    },
-
-    {
-        name: "Crisem Kyth Barbado",
-        position: "Events Coordinator",
-        image: "core-team-2021/Barbado.png",
-        profileLink: "fb.com",
-        details: "Hi, I’m Crisem Barbado. I love doing karate and watching videos. ",
-        birthday: "September 14"
+        name: "Kent Philip C. Brillantes",
+        position: "Chief Communications Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/kent.brillantesii?mibextid=ZbWKwL",
+        details: '""',
+        birthday: "February 18"
     },
 
     {
-        name: "Jaycon Jude Madrid",
-        position: "Events Coordinator",
-        image: "core-team-2021/Madrid.png",
-        profileLink: "fb.com",
-        details: "Hi! I am Jaycon Jude Madrid. I love to play outdoor sports and I am also interested in discovering new technology.",
-        birthday: "April 6"
+        name: "Jeff John Casiño",
+        position: "Chief Finance and Externals Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/jeffjohngg",
+        details: '""',
+        birthday: "April 11"
     },
 
     {
-        name: "Charisse Duarte",
-        position: "Social Media Manager",
-        image: "core-team-2021/Duarte.png",
-        profileLink: "fb.com",
-        details: '"Teamwork makes the dream work."',
-        birthday: "April 15"
+        name: "Reyzell Mae L. Castillo",
+        position: "Secretary",
+        image: "",
+        profileLink: "https://www.facebook.com/profile.php?id=100064981865686",
+        details: '""',
+        birthday: "July 28"
     },
 
     {
-        name: "Kharylle Dalapo",
-        position: "Lead Secretariat",
+        name: "Angel D. Reyes",
+        position: "Internal Engagements Officer",
+        image: "",
+        profileLink: "https://m.facebook.com/profile.php/?id=100009124966719",
+        details: '""',
+        birthday: "July 18"
+    },
+
+    {
+        name: "Franklin Rafael A. Amolato",
+        position: "Community Engagements Officer",
         image: "core-team-2021/Dalapo.png",
-        profileLink: "fb.com",
-        details: '"INDIVIDUALLY, we are one droplet. TOGETHER, we are an ocean."',
-        birthday: "November 23"
+        profileLink: "https://www.facebook.com/franklin.abrenica.90?mibextid=ZbWKwL",
+        details: '""',
+        birthday: "December 30"
     },
 
     {
-        name: "Jovel Kenth Emnacin",
-        position: "Lead Secretariat",
-        image: "core-team-2021/Emnacin.png",
-        profileLink: "fb.com",
-        details: '"INDIVIDUALLY, we are one droplet. TOGETHER, we are an ocean."',
-        birthday: "February 23"
-    },
-]
-
-const coreTeam2021 = [
-    {
-        name: "Phillip Jhon Lumod",
-        position: "Design Lead",
-        image: "core-team-2021/Lumod.png",
-        profileLink: "fb.com",
-        details: "Howdy Stiers My Name is Phillip Jhon Lumod, I love to read mangas and listen to music. ",
-        birthday: "June 11",
-    },
-    {
-        name: "Jeeza Lane Salise",
-        position: "Lead Writer",
-        image: "core-team-2021/Salise.png",
-        profileLink: "fb.com",
-        details: "Hello everyone, my name is Jeeza Lane Salise. My classmates call me Wasd and I'm interested in technology. I love to play video games, watch animated tv shows, read webcomics, and listen to music.",
-        birthday: "December 4"
-    },
-    {
-        name: "Jason Llanes",
-        position: "Event Lead",
-        image: "core-team-2021/Llanes.png",
-        profileLink: "fb.com",
-        details: "Oh! Hi there, It’s me Jason S. Llanes. By the way I’m the type of person who is fun to go with and also I love doing things in regards to programming and also gaming. ;)",
-        birthday: "March 13"
+        name: "Neca Vae P. Galarpe",
+        position: "Community Engagements Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/profile.php?id=100078397568218",
+        details: '""',
+        birthday: "September 23"
     },
 
     {
-        name: "Crisem Kyth Barbado",
-        position: "Events Coordinator",
-        image: "core-team-2021/Barbado.png",
-        profileLink: "fb.com",
-        details: "Hi, I’m Crisem Barbado. I love doing karate and watching videos. ",
-        birthday: "September 14"
+        name: "Jannette T. Corral",
+        position: "Event's Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/jamone.coreda?mibextid=ZbWKwL",
+        details: '""',
+        birthday: "August 5"
     },
 
     {
-        name: "Jaycon Jude Madrid",
-        position: "Events Coordinator",
-        image: "core-team-2021/Madrid.png",
-        profileLink: "fb.com",
-        details: "Hi! I am Jaycon Jude Madrid. I love to play outdoor sports and I am also interested in discovering new technology.",
-        birthday: "April 6"
+        name: "Justin Q. Bongcas",
+        position: "Event's Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/profile.php?id=100093358000484&mibextid=ZbWKwL",
+        details: '""',
+        birthday: "June 27"
     },
 
     {
-        name: "Charisse Duarte",
-        position: "Social Media Manager",
-        image: "core-team-2021/Duarte.png",
-        profileLink: "fb.com",
-        details: '"Teamwork makes the dream work."',
-        birthday: "April 15"
+        name: "Sean Benedict P. Malferrari",
+        position: "Web Development Lead",
+        image: "",
+        profileLink: "https://www.facebook.com/seanmalferrari",
+        details: '""',
+        birthday: "May 31"
     },
 
     {
-        name: "Kharylle Dalapo",
-        position: "Lead Secretariat",
-        image: "core-team-2021/Dalapo.png",
-        profileLink: "fb.com",
-        details: '"INDIVIDUALLY, we are one droplet. TOGETHER, we are an ocean."',
-        birthday: "November 23"
+        name: "Kaye Z. Velez",
+        position: "Promotions Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/KayeVeLez18?mibextid=ZbWKwL",
+        details: '""',
+        birthday: "August 4"
     },
 
     {
-        name: "Jovel Kenth Emnacin",
-        position: "Lead Secretariat",
-        image: "core-team-2021/Emnacin.png",
-        profileLink: "fb.com",
-        details: '"INDIVIDUALLY, we are one droplet. TOGETHER, we are an ocean."',
-        birthday: "February 23"
+        name: "Dishella Reese C. Labla",
+        position: "Creative Lead",
+        image: "",
+        profileLink: "https://www.facebook.com/profile.php?id=100087759005315",
+        details: '""',
+        birthday: "April 11"
+    },
+
+    {
+        name: "Orjay P. Obsiana",
+        position: "Creative Lead",
+        image: "",
+        profileLink: "https://www.facebook.com/hoo.hoon64/",
+        details: '""',
+        birthday: "September 16"
+    },
+
+    {
+        name: "Karylle Kristal Bago",
+        position: "Creative Lead",
+        image: "",
+        profileLink: "https://www.facebook.com/aryyyl.18?mibextid=ZbWKwL",
+        details: '""',
+        birthday: "November 12"
+    },
+
+    {
+        name: "Nyko Paolo P. Guillero",
+        position: "Content Writer",
+        image: "",
+        profileLink: "https://www.facebook.com/nyko.guillero.737",
+        details: '""',
+        birthday: "February 27"
+    },
+
+    {
+        name: "Alec Jude A. Jaraula",
+        position: "Content Writer",
+        image: "",
+        profileLink: "https://www.facebook.com/alec.jaraula?mibextid=ZbWKwL",
+        details: '""',
+        birthday: "October 14"
+    },
+
+    {
+        name: "Jedidiah A. Flores",
+        position: "Video Editor",
+        image: "",
+        profileLink: "https://www.facebook.com/Jedss2004?mibextid=LQQJ4d",
+        details: '""',
+        birthday: "January 4"
+    },
+
+    {
+        name: "Ivan Nicholas P. Salvador",
+        position: "Video Editor",
+        image: "",
+        profileLink: "",
+        details: '""',
+        birthday: "September 17"
+    },
+
+    {
+        name: "Leanne Bryle F. Timario",
+        position: "Engagement Ambassador",
+        image: "",
+        profileLink: "https://www.facebook.com/LBFT.04/",
+        details: '""',
+        birthday: "June 18"
+    },
+
+    {
+        name: "Randy J. Temblor",
+        position: "Engagement Ambassador",
+        image: "",
+        profileLink: "https://www.facebook.com/kingNimrod83?mibextid=ZbWKwL",
+        details: '""',
+        birthday: "March 27"
+    },
+
+    {
+        name: "Almirah N. Andajao",
+        position: "Engagement Ambassador",
+        image: "",
+        profileLink: "https://www.facebook.com/andajao.alms18?mibextid=ZbWKwL",
+        details: '""',
+        birthday: "March 18"
+    },
+
+    {
+        name: "Adryl Louise Agustin P. Diaz",
+        position: "Engagement Ambassador",
+        image: "",
+        profileLink: "https://www.facebook.com/diazzzzzzzzadryl/",
+        details: '""',
+        birthday: "August 26"
+    },
+
+    {
+        name: "John Dave P. Cinco",
+        position: "Finance Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/johndeb011/",
+        details: '""',
+        birthday: "October 15"
+    },
+
+    {
+        name: "Prince Aaron James J. Bacang",
+        position: "Finance Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/gokapa.waseiradou",
+        details: '""',
+        birthday: "March 4"
+    },
+
+    {
+        name: "Jason Walter F. Padrique",
+        position: "Externals Officer",
+        image: "",
+        profileLink: "https://www.facebook.com/jason.padrique.3",
+        details: '""',
+        birthday: "September 20"
     },
 ]
 
