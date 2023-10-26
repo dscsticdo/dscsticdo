@@ -363,6 +363,7 @@ const coreTeam2020 = [
 
 const coreTeam = {
     coreTeam2021,
+    coreTeam2023, 
     coreTeam2020,
 }
 
