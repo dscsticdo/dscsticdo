@@ -291,6 +291,79 @@ const coreTeam2023 = [
     },
 ]
 
+const coreTeam2021 = [
+    {
+        name: "Phillip Jhon Lumod",
+        position: "Design Lead",
+        image: "core-team-2021/Lumod.png",
+        profileLink: "fb.com",
+        details: "Howdy Stiers My Name is Phillip Jhon Lumod, I love to read mangas and listen to music. ",
+        birthday: "June 11",
+    },
+    {
+        name: "Jeeza Lane Salise",
+        position: "Lead Writer",
+        image: "core-team-2021/Salise.png",
+        profileLink: "fb.com",
+        details: "Hello everyone, my name is Jeeza Lane Salise. My classmates call me Wasd and I'm interested in technology. I love to play video games, watch animated tv shows, read webcomics, and listen to music.",
+        birthday: "December 4"
+    },
+    {
+        name: "Jason Llanes",
+        position: "Event Lead",
+        image: "core-team-2021/Llanes.png",
+        profileLink: "fb.com",
+        details: "Oh! Hi there, It’s me Jason S. Llanes. By the way I’m the type of person who is fun to go with and also I love doing things in regards to programming and also gaming. ;)",
+        birthday: "March 13"
+    },
+
+    {
+        name: "Crisem Kyth Barbado",
+        position: "Events Coordinator",
+        image: "core-team-2021/Barbado.png",
+        profileLink: "fb.com",
+        details: "Hi, I’m Crisem Barbado. I love doing karate and watching videos. ",
+        birthday: "September 14"
+    },
+
+    {
+        name: "Jaycon Jude Madrid",
+        position: "Events Coordinator",
+        image: "core-team-2021/Madrid.png",
+        profileLink: "fb.com",
+        details: "Hi! I am Jaycon Jude Madrid. I love to play outdoor sports and I am also interested in discovering new technology.",
+        birthday: "April 6"
+    },
+
+    {
+        name: "Charisse Duarte",
+        position: "Social Media Manager",
+        image: "core-team-2021/Duarte.png",
+        profileLink: "fb.com",
+        details: '"Teamwork makes the dream work."',
+        birthday: "April 15"
+    },
+
+    {
+        name: "Kharylle Dalapo",
+        position: "Lead Secretariat",
+        image: "core-team-2021/Dalapo.png",
+        profileLink: "fb.com",
+        details: '"INDIVIDUALLY, we are one droplet. TOGETHER, we are an ocean."',
+        birthday: "November 23"
+    },
+
+    {
+        name: "Jovel Kenth Emnacin",
+        position: "Lead Secretariat",
+        image: "core-team-2021/Emnacin.png",
+        profileLink: "fb.com",
+        details: '"INDIVIDUALLY, we are one droplet. TOGETHER, we are an ocean."',
+        birthday: "February 23"
+    },
+]
+
+
 
 const coreTeam2020 = [
     {
