@@ -1,5 +1,5 @@
 const keyPeople = [
-      {
+    {
         name: "Angel A. Tan",
         position: "DSC Adviser AY 2023 - 24",
         image: "core-team-2021/Adviser.png",
@@ -58,7 +58,7 @@ const keyPeople = [
 ]
 
 const coreTeam2023 = [
-      {
+    {
         name: "John Andrew L. Castillano",
         position: "Chief Operating Officer",
         image: "",
@@ -363,7 +363,7 @@ const coreTeam2020 = [
 
 const coreTeam = {
     coreTeam2021,
-    coreTeam2023, 
+    coreTeam2023,
     coreTeam2020,
 }
 
