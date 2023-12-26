@@ -24,7 +24,7 @@ const PartnersCard = ({ image, alt, link, tooltip }) => {
 					>
 						<img
 							className="rounded-t-lg w-[350px] h-[150px] object-contain object-center  px-1.5"
-							src={`/img/${image}`}
+							src={`/dscsticdo/img/${image}`}
 							alt={alt}
 						/>
 						<a href={link} className="cursor-pointer">
