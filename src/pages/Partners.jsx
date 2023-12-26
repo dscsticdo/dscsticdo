@@ -2,14 +2,8 @@ import { PartnersData } from "../data/PartnersData";
 import PartnersCard from "../components/partners/PartnersCard";
 
 const Partners = () => {
-	const partnerCards = PartnersData.map((partner) => {
-		return (
-			<PartnersCard
-				key={partner.id}
-				image={partner.image}
-				tooltip={partner.tooltip}
-			/>
-		);
+	const partnerCards = PartnersData.map((partner, key) => {
+		return <PartnersCard key={key} {...partner} />;
 	});
 	return (
 		<>
